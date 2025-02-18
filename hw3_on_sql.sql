@@ -46,11 +46,11 @@ on conflict (customer_id) do nothing
  * Удалите из таблицы все строки, где адрес содержит Brazil.
  */
 
-delete from customers 
+/*delete from customers 
 where 
 	address ilike '%Brazil%' 
 	 and customer_id not in (select distinct customer_id from sales)
-;
+;*/
 
 
 /*
